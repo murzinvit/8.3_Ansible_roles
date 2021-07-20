@@ -11,3 +11,9 @@ elasticsearch:
        ansible_connection: docker
     centos:
        ansible_connection: docker
+kibana:
+  hosts:
+    ubuntu:
+       ansible_connection: docker
+    centos:
+       ansible_connection: docker
