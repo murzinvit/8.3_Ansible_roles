@@ -13,4 +13,4 @@
     
 Роль для kibana:  [kibana-role](https://github.com/murzinvit/kibana-role.git) </br>
    
-![screen](https://github.com/murzinvit/08.03_work_with_roles/blob/0dcd72099edaa0a4ec1abb2d4df67a62af9ac0be/1.png)
+![screen](https://github.com/murzinvit/screen/blob/main/VirtualBox_ubuntu_64_02_08_2021_14_54_29.png)
