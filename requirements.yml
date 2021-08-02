@@ -1,10 +1,12 @@
 ---
  - src: git@github.com:murzinvit/java-role.git
    scm: git
+   version: "1.0.1"
    name: java-role
 
  - src: git@github.com:murzinvit/elastic-role.git
    scm: git
+   version: "1.0.1"
    name: elastic-role
 
  - src: git@github.com:murzinvit/kibana-role.git
