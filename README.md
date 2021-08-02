@@ -1,38 +1,16 @@
-Role Name
-=========
+#### 08.03_work_with_roles </br>
+====================================</br>
+Загрузить контейнеры - `docker pull distr:latest` </br>
+Запуск контейнеров для изменения - `docker run -d --name container_name distr:latest sleep 10000000` </br> 
+В контейнеры перед работой с ansible поставить sudo и python, зайдя в консоль - `docker exec -it ubuntu /bin/bash`</br>
+Закоментировать изменения в контейнерах - `docker commit -p container_name distr:ver1`</br>
+Роли работают только из дистрибутивов kibana, elastic расположенных в локальных папках ролей - files </br>
+Переменные использовал 2, - dist_version и dist_home, разнёс их в папки - default и vars, в папках ролей</br>
+Роли ставяться из git в папку roles, команда установки - `ansible-galaxy install -r requirements.yml -p roles/`</br>
+Выполнение playbook - `ansible-playbook site.yml -i inventory/prod.yml`</br>
 
-A brief description of the role goes here.
-
-Requirements
-------------
-
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
-
-Role Variables
---------------
-
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Роль для elastic:  [elastic-role](https://github.com/murzinvit/elastic-role.git) </br>
+    
+Роль для kibana:  [kibana-role](https://github.com/murzinvit/kibana-role.git) </br>
+   
+![screen](https://github.com/murzinvit/08.03_work_with_roles/blob/0dcd72099edaa0a4ec1abb2d4df67a62af9ac0be/1.png)
