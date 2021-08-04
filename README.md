@@ -1,5 +1,6 @@
 #### 08.03_work_with_roles </br>
 ====================================</br>
+Для выполнения playbook дистрибутивы сохранить в папки files соответсвующих папок ролей. Выставить значения версий в - vars/main.yml </br>
 Загрузить контейнеры - `docker pull centos:latest, и ubuntu:latest` </br>
 Запуск контейнеров для изменения - `docker run -d --name container_name distr:latest sleep 1000000` </br> 
 В контейнеры перед работой с ansible поставить sudo и python, зайдя в консоль - `docker exec -it ubuntu /bin/bash`</br>
